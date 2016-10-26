@@ -24,8 +24,6 @@ CustomerBean bean = dao1.select("Alex");
 <h1><%=bean%></h1>
 
 
-
-
 <%@ page import="javax.naming.*" %>
 <%@ page import="javax.sql.*" %>
 <%@ page import="java.sql.*" %>
