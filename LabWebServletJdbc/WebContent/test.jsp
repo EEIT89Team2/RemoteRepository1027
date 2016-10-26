@@ -39,5 +39,6 @@ while(rset.next()) {
 }
 %>
 123
+1456
 </body>
 </html>
