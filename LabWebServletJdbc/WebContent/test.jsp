@@ -37,6 +37,7 @@ while(rset.next()) {
 	String col2 = rset.getString(2);
 	out.println("<h1>"+col1+":"+col2+"</h1>");
 	out.println("<h1>"+col2+":"+col2+"</h1>");
+	out.println("<h1>"+col2+":"+col1+"</h1>");
 }
 %>
 </body>
