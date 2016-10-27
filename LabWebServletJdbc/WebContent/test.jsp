@@ -53,14 +53,26 @@ while(rset.next()) {
 	String col1 = rset.getString(1);
 	String col2 = rset.getString(2);
 	out.println("<h1>"+col1+":"+col2+"</h1>");
+	out.println("<h1>"+col2+":"+col2+"</h1>");
+	out.println("<h1>"+col2+":"+col1+"</h1>");
+	out.println("<h1>"+"col2 = rset.getString(2)"+":"+col1+"</h1>");
+
+	
+	out.println("<h1>"+col1+":"+col2+"</h1>");
+
 }
 %>
  
   
 }
 %>
+
 123
 1456
-878978979
+
+
+102710271027
+
+
 </body>
 </html>
