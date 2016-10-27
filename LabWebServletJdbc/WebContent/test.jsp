@@ -40,5 +40,12 @@ while(rset.next()) {
 	out.println("<h1>"+col2+":"+col1+"</h1>");
 }
 %>
+=======
+	out.println("<h1>"+col1+":"+col2+"</h1>");       
+}
+%>
+123
+1456
+>>>>>>> branch 'master' of https://github.com/EEIT89Team2/RemoteRepository1027
 </body>
 </html>

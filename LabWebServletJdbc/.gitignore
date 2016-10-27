@@ -1,4 +1,10 @@
 /.classpath
+<<<<<<< HEAD
 /.settings/
 /.project
 /build
+=======
+/.project
+/.settings/
+/build/
+>>>>>>> branch 'master' of https://github.com/EEIT89Team2/RemoteRepository1027
