@@ -23,6 +23,7 @@ CustomerBean bean = dao1.select("Alex");
 %>
 <h1><%=bean%></h1>
 
+<<<<<<< HEAD
 
 <%@ page import="javax.naming.*" %>
 <%@ page import="javax.sql.*" %>
@@ -39,5 +40,30 @@ while(rset.next()) {
 	out.println("<h1>"+col1+":"+col2+"</h1>");
 }
 %>
+=======
+<%@ page import="javax.naming.*" %>
+<%@ page import="javax.sql.*" %>
+<%@ page import="java.sql.*" %>
+<%
+// Context ctx = new InitialContext();
+// DataSource dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/xxx");
+// Connection conn = dataSource.getConnection();
+// Statement stmt = conn.createStatement();
+// ResultSet rset = stmt.executeQuery("select * from dept");
+
+while(rset.next()) {
+	String col1 = rset.getString(1);
+	String col2 = rset.getString(2);
+	out.println("<h1>"+col1+":"+col2+"</h1>");
+}
+%>
+=======
+	out.println("<h1>"+col1+":"+col2+"</h1>");       
+}
+%>
+123
+1456
+
+>>>>>>> branch 'master' of https://github.com/EEIT89Team2/RemoteRepository1027
 </body>
 </html>
