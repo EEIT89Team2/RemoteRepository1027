@@ -6,11 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
- <H2>球與球的衝突</H2>
-
-<body>  
-
-
+<body>
 
 <%@ page import="model.dao.*" %>
 <%@ page import="model.*" %>
