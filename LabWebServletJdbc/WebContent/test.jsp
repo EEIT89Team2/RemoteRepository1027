@@ -7,7 +7,11 @@
 <title>Insert title here</title>
 </head>
  <H2>球與球的衝突</H2>
+
 <body>  
+
+
+
 <%@ page import="model.dao.*" %>
 <%@ page import="model.*" %>
 <%@ page import="java.util.*" %>
@@ -38,41 +42,5 @@ while(rset.next()) {
 	out.println("<h1>"+col1+":"+col2+"</h1>");
 }
 %>
-=======
-<body>
-
-<%@ page import="model.dao.*" %>
-<%@ page import="model.*" %>
-<%@ page import="java.util.*" %>
-<%
-ProductDAOJdbc dao2 = new ProductDAOJdbc();
-List<ProductBean> beans = dao2.select();
-%>
-<h1><%=beans%></h1>
-
-<%
-CustomerDAOJdbc dao1 = new CustomerDAOJdbc();
-CustomerBean bean = dao1.select("Alex");
-%>
-<h1><%=bean%></h1>
-
-<%@ page import="javax.naming.*" %>
-<%@ page import="javax.sql.*" %>
-<%@ page import="java.sql.*" %>
-<%
-Context ctx = new InitialContext();
-DataSource dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/xxx");
-Connection conn = dataSource.getConnection();
-Statement stmt = conn.createStatement();
-ResultSet rset = stmt.executeQuery("select * from dept");
-while(rset.next()) {
-	String col1 = rset.getString(1);
-	String col2 = rset.getString(2);
-	out.println("<h1>"+col1+":"+col2+"</h1>");       
-}
-%>
-123
-1456
->>>>>>> branch 'master' of https://github.com/EEIT89Team2/RemoteRepository1027.git
 </body>
 </html>
