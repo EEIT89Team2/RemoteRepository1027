@@ -8,11 +8,6 @@
 <title>Home</title>
 </head>
 <body>
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> branch 'master' of https://github.com/EEIT89Team2/RemoteRepository1027.git
 <h3>Welcome ${user.custid}</h3>
 
 <h3><a href="<c:url value="/secure/login.jsp" />">Login</a></h3>
