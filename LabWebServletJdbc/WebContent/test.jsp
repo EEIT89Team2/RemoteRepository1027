@@ -38,7 +38,6 @@ while(rset.next()) {
 	out.println("<h1>"+col1+":"+col2+"</h1>");       
 }
 %>
-123
-1456
+102710271027
 </body>
 </html>
